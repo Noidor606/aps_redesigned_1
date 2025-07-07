@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АПС Сочи - Системы автоматического полива</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="dynamic-background"></div>
+
+<!-- ================= Шапка сайта (С ТЕКСТОМ И ЛОГО) ================= -->
+    <header class="site-header">
+        <div class="container header-container">
+            
+            <!-- НОВЫЙ БЛОК: Обертка для левой части -->
+            <!-- ПРАВИЛЬНО: -->
+            <div class="header-left">
+                <span class="header-tagline">На рынке с 2000 года</span>
+                <span class="header-separator">|</span>
+                <!-- Теперь ссылка - это просто ссылка, без лишнего класса-плейсхолдера. -->
+                <a href="#hero" class="site-logo"> 
+                    <img src="logo_aps.png" alt="Логотип АПС Сочи">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#pricing">Стоимость</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-primary header-cta">Вызвать специалиста</a>
+            <button class="burger-menu" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= 0. Первый экран (Hero) - ОБНОВЛЕННЫЙ ТЕКСТ ================= -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content animate-on-scroll">
+                <h1>Автоматический полив в Сочи</h1>
+                <p class="lead">
+                    Проектируем и монтируем системы автополива, ландшафтного освещения и туманообразования. От идеи до полного сервисного обслуживания.
+                </p>
+                <a href="#contact" class="btn btn-primary">Вызвать специалиста</a>
+            </div>
+        </section>
+
+        <!-- Остальные секции без изменений -->
+        <!-- ================= 1. Услуги (ЭЛЕГАНТНЫЙ СПИСОК) ================= -->
+         
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Наши услуги</h2>
+                    <p class="section-subtitle">Мы предоставляем полный спектр услуг — от первичной консультации и проектирования до монтажа, обслуживания и ремонта систем любой сложности.</p>
+                </div>
+
+                <!-- Новый, элегантный список услуг -->
+                <div class="services-features-grid animate-on-scroll">
+                    
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <span>Выезд специалиста на место для консультации</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <span>Составление подробного плана системы автополива</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <span>Составление калькуляции</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <span>Поставка комплектующих для монтажа</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <span>Устройство капельного полива</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <span>Монтажные работы и шеф-монтаж</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <span>Гарантийное и послегарантийное обслуживание</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <span>Консервация (расконсервация) системы</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <span>Ремонт и восстановление существующих систем</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 2. Стоимость монтажа ================= -->
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Стоимость системы автополива</h2>
+                    <p class="section-subtitle">Каждый участок уникален, поэтому стоимость системы не может быть фиксированной. Мы не предлагаем шаблонных решений, а создаем систему, которая идеально подходит именно вам и вашему бюджету.</p>
+                </div>
+
+                <!-- Центральный блок с предложением -->
+                <div class="pricing-cta-block animate-on-scroll">
+                    <div class="pricing-icon">
+                        <!-- Иконка: Калькулятор -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><line x1="16" y1="10" x2="12" y2="10"></line><line x1="12" y1="10" x2="12" y2="18"></line><line x1="8" y1="10" x2="8" y2="18"></line></svg>
+                    </div>
+                    <h3>Получите точный и прозрачный расчет</h3>
+                    <p>Наш специалист бесплатно приедет на ваш участок, проведет замеры и подготовит подробную смету с несколькими вариантами на выбор. Это вас ни к чему не обязывает.</p>
+                    <div class="factors-list">
+                        <strong>Цена зависит от:</strong> площади и рельефа, источника воды, типа растений и выбранного оборудования.
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Вызвать специалиста бесплатно</a>
+                </div>
+            </div>
+        </section>
+        <!-- ================= 3. Фотогалерея ================= -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Галерея наших работ</h2>
+                    <p class="section-subtitle">Посмотрите, как выглядят участки с нашими системами автополива. Каждый проект — это наша гордость.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Создаем ровно 9 элементов -->
+                    <a href="#" class="gallery-item animate-on-scroll" style="transition-delay: 0.0s;">
+                        <div class="gallery-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                    </a>
+                    <a href="#" class="gallery-item animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="gallery-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                    </a>
+                    <a href="#" class="gallery-item animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="gallery-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                    </a>
+                    <a href="#" class="gallery-item animate-on-scroll" style="transition-delay: 0.0s;">
+                        <div class="gallery-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                    </a>
+                    <a href="#" class="gallery-item animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="gallery-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                    </a>
+                    <a href="#" class="gallery-item animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="gallery-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                    </a>
+                    <a href="#" class="gallery-item animate-on-scroll" style="transition-delay: 0.0s;">
+                        <div class="gallery-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                    </a>
+                    <a href="#" class="gallery-item animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="gallery-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                    </a>
+                    <a href="#" class="gallery-item animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="gallery-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ================= 4. Этапы работы (Классический дизайн) ================= -->
+        <section id="process" class="process-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Простой и понятный процесс</h2>
+                    <p class="section-subtitle">Мы сделали процесс максимально прозрачным, чтобы вы всегда знали, что происходит на каждом шагу.</p>
+                </div>
+                <div class="process-grid">
+                    
+                    <!-- Этап 1 -->
+                    <div class="process-card animate-on-scroll">
+                        <!-- ИЗМЕНЕНА СТРУКТУРА НОМЕРА -->
+                        <div class="process-number-wrapper">
+                            <div class="process-number-circle">01</div>
+                        </div>
+                        <h3>Заявка и Проект</h3>
+                        <p>Вы оставляете заявку. Наш инженер бесплатно выезжает на участок, проводит замеры и готовит коммерческое предложение с планом системы.</p>
+                    </div>
+
+                    <!-- Этап 2 -->
+                    <div class="process-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="process-number-wrapper">
+                            <div class="process-number-circle">02</div>
+                        </div>
+                        <h3>Договор</h3>
+                        <p>После согласования всех деталей проекта и сметы мы подписываем официальный договор, в котором фиксируются стоимость и сроки работ.</p>
+                    </div>
+
+                    <!-- Этап 3 -->
+                    <div class="process-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="process-number-wrapper">
+                            <div class="process-number-circle">03</div>
+                        </div>
+                        <h3>Монтаж</h3>
+                        <p>Наша бригада выполняет все монтажные и пуско-наладочные работы "под ключ" в строго оговоренные сроки, аккуратно и без вреда для ландшафта.</p>
+                    </div>
+                    
+                    <!-- Этап 4 -->
+                    <div class="process-card animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="process-number-wrapper">
+                            <div class="process-number-circle">04</div>
+                        </div>
+                        <h3>Сдача и Гарантия</h3>
+                        <p>Мы сдаем вам полностью готовую и настроенную систему, проводим обучение и предоставляем официальную гарантию на оборудование и все выполненные работы.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 5. О нас ================= -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>О компании «АПС»</h2>
+                </div>
+                <div class="about-grid">
+                    <!-- Блок с текстом -->
+                    <div class="about-text animate-on-scroll">
+                        <h3>Работаем в Сочи с 2000 года.</h3>
+                        <p>Мы были одними из первых, кто начал заниматься грамотным монтажом систем автополива в регионе. Сегодня наш опыт основан на многолетней практике и прямом сотрудничестве с ведущими мировыми производителями — HUNTER, RAIN BIRD, IRRITEC.</p>
+                        <p>Наш подход — это инженерная точность. Каждый проект, вне зависимости от сложности, сопровождается полным комплектом технической документации: от расчетов и схем до финальных чертежей. Это гарантия надежности и долговечности системы.</p>
+                    </div>
+                    <!-- Блок с картинкой -->
+                    <div class="about-image animate-on-scroll" style="transition-delay: 0.2s;">
+                        <!-- Фоновое изображение будет задано в CSS -->
+                    </div>
+                </div>
+            </div>
+</section>
+        <section id="tech" class="tech-section"><div class="container"><div class="section-header animate-on-scroll"><div class="text-placeholder h2" style="margin: 0 auto;"></div></div><div class="tech-logos animate-on-scroll"><div class="logo-item-placeholder"></div><div class="logo-item-placeholder"></div><div class="logo-item-placeholder"></div><div class="logo-item-placeholder"></div><div class="logo-item-placeholder"></div></div></div></section>
+        <section id="reviews" class="reviews-section"><div class="container"><div class="section-header animate-on-scroll"><div class="text-placeholder h2" style="margin: 0 auto;"></div></div><div class="reviews-grid"><div class="review-card animate-on-scroll"><div class="text-placeholder p"></div></div><div class="review-card animate-on-scroll"><div class="text-placeholder p"></div></div><div class="review-card animate-on-scroll"><div class="text-placeholder p"></div></div></div></div></section>
+        <section id="docs" class="docs-section"><div class="container"><div class="section-header animate-on-scroll"><div class="text-placeholder h2" style="margin: 0 auto;"></div></div><div class="docs-grid"><div class="doc-item-placeholder animate-on-scroll"></div><div class="doc-item-placeholder animate-on-scroll"></div></div></div></section>
+    </main>
+    <footer id="contact" class="site-footer"><div class="container footer-content animate-on-scroll"><div class="text-placeholder h2" style="margin: 0 auto 1rem;"></div><div class="footer-contacts-placeholder"><div class="text-placeholder"></div><div class="text-placeholder"></div></div><div class="copyright-placeholder text-placeholder"></div></div></footer>
+
+</body>
+</html>
