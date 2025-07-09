@@ -39,12 +39,15 @@ function createDynamicBackground() {
     // Запускаем генератор фона
     createDynamicBackground();
 
-    // Перегенерировать фон при изменении размера окна
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(createDynamicBackground, 250);
-    });
+    // --- ЗАМЕНИ НА ЭТОТ БЛОК ---
+    // Перегенерировать фон при изменении размера окна (ТОЛЬКО ДЛЯ ДЕСКТОПОВ)
+    if (window.innerWidth > 992) { // 992px - стандартная точка для планшетов/десктопов
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(createDynamicBackground, 250);
+        });
+    }
 
     // --- ЖЕЛЕЗНЫЙ ФИКС СКРОЛЛА ПРИ ЗАГРУЗКЕ ---
     if (history.scrollRestoration) {
